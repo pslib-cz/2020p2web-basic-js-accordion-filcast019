@@ -702,9 +702,9 @@ body {
     grid-column-end: 4;
 } */
 
-.detail-vypujcky-container {
-    /*display: none;*/
-}
+/*.detail-vypujcky-container {
+    display: none;
+}*/
 
 .detail-vypujcky-item {
     display: grid;
