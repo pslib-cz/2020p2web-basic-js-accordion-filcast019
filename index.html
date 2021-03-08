@@ -225,6 +225,34 @@
             </div>
         </footer>
     </div>
+    <script>
+        //najít všechny výpůjčka-itemy 
+        var itemy = document.getElementsByClassName("vypujcka-item");
+        console.log(itemy);
+        //najít tělo -> detail-vypujcky-container
+        var telo = document.getElementsByClassName("detail-vypujcky-container");
+        console.log(telo);
+        for (let i=0; i<itemy.length; i++)
+        {
+            //najít input checkbox
+            let box = itemy[i].querySelector("input");
+            console.log(box);
+            //událost při kliknutí pokud je/není zaškrtlé
+            box.onclick = () =>
+            {
+                //nastavit výšku 
+                if(box.checked)
+                {
+                    telo[i].style.height = telo[i].scrollHeight + "px";
+                }
+                //jinak nastavit výšku těla na 0
+                else
+                {
+                    telo[i].style.height = "0px";
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
